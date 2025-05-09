@@ -55,13 +55,40 @@ Each file should contain the following columns:
 - `INPUT TEXT`: Bounding Box + OCR text.
 - `OUTPUT TEXT`: Ground-truth narrative instructions describing the scene.
 
+# GPT-3.5 Fine-Tuning via OpenAI API  
+## Notebook: `Option_3_Retraining_Using_GPT_3_5.ipynb`
+
+This notebook demonstrates how to fine-tune OpenAI’s `gpt-3.5-turbo` model using custom JSONL datasets for the task of generating narrative descriptions from scene-based inputs. This is **Option 3** in the InstructAware model comparison.
+
+---
+
+### 🚀 Key Features
+
+- Uploads `.jsonl` datasets to OpenAI via API.
+- Initiates and monitors fine-tuning jobs on `gpt-3.5-turbo`.
+- Evaluates model performance on a held-out test set.
+- Supports generation of predictions and saving them to `.jsonl` or `.csv` formats.
+
+---
+
+### 🔐 API Key Setup (for Google Colab)
+
+This notebook uses `userdata.get("OpenAiKey")` to access your OpenAI API key securely.
+
+#### 👉 How to add your API key in Colab:
+
+1. Click the **🔐 key icon** in the left sidebar to open **"Secrets"**.
+
+3. Add a new secret:
+   - **Key:** `OpenAiKey`  
+   - **Value:** *your OpenAI API key* (get it from [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys))
 
 
 
 
 
-Dataset used for Detection - https://drive.google.com/drive/folders/1hzg9zE7_syzb83Le37Kzc8k87WpzKE7v?usp=sharing
-Dataset used for Narrative Generation - https://drive.google.com/drive/folders/1ubRAzrbPvVPL2TcnK1H6fM6NXE9HL-Nz?usp=sharing
-Narrative Dataset file for Training Transformer Models (CSV) - https://drive.google.com/drive/folders/1zFOqAvPMl39hQgIty116fUdmpZrm9dkj?usp=sharing
-Narrative Dataset file for Training Transformer Models (JSONL) - https://drive.google.com/drive/folders/1zFOqAvPMl39hQgIty116fUdmpZrm9dkj?usp=sharing
-Option 1 - Training Colab from Scratch - https://colab.research.google.com/drive/1orAc8W9sziHX3ZqXsgQgrK4s7U0JCUiS?usp=sharing
+- Dataset used for Detection - https://drive.google.com/drive/folders/1hzg9zE7_syzb83Le37Kzc8k87WpzKE7v?usp=sharing
+- Dataset used for Narrative Generation - https://drive.google.com/drive/folders/1ubRAzrbPvVPL2TcnK1H6fM6NXE9HL-Nz?usp=sharing
+- Narrative Dataset file for Training Transformer Models (CSV) - https://drive.google.com/drive/folders/1zFOqAvPMl39hQgIty116fUdmpZrm9dkj?usp=sharing
+- Narrative Dataset file for Training Transformer Models (JSONL) - https://drive.google.com/drive/folders/1zFOqAvPMl39hQgIty116fUdmpZrm9dkj?usp=sharing
+
