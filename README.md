@@ -1,6 +1,35 @@
 # InstructAware
 This has all training Colabs, dataset links and other related resources related to InstructAware project
 
+# Transformer-Based Instructional Narrative Generation (From Scratch)  
+## Notebook: `Option1_Transformer_trained_From_Scratch_With_Metrics.ipynb`
+
+This notebook demonstrates how to build and train a Transformer model **from scratch** for the task of generating instructional narratives from scene input data. It represents **Option 1** in the modeling strategies of the InstructAware project.
+
+---
+
+### 🛠️ Key Features
+
+- Implements a custom Transformer architecture using PyTorch or TensorFlow.
+- Trains the model end-to-end using preprocessed CSV datasets (`INPUT TEXT` → `OUTPUT TEXT`).
+- Includes custom training loop and attention mechanisms.
+- Tracks training and validation performance over epochs.
+- Visualizes loss, learning rate, and accuracy using Matplotlib and TensorBoard (if enabled).
+
+---
+
+### 📂 Dataset Format
+Expected CSV file input format:
+datasets/
+- train_dataset_cleaned.csv  
+- validation_dataset_cleaned.csv  
+- test_dataset_cleaned.csv
+
+  
+Each file must contain:
+- `INPUT TEXT`: bounding box + OCR text.
+- `OUTPUT TEXT`: Instructional text describing the scene.
+
 # T5-Based Instructional Narrative Generation
 ## Notebook: `Option2_T5_with_Final_Dataset.ipynb`
 
@@ -23,7 +52,7 @@ datasets/
 
 
 Each file should contain the following columns:
-- `INPUT TEXT`: Preprocessed textual input (e.g., detected object labels, bounding box positions).
+- `INPUT TEXT`: Bounding Box + OCR text.
 - `OUTPUT TEXT`: Ground-truth narrative instructions describing the scene.
 
 
