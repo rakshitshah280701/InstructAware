@@ -82,10 +82,65 @@ This notebook uses `userdata.get("OpenAiKey")` to access your OpenAI API key sec
 3. Add a new secret:
    - **Key:** `OpenAiKey`  
    - **Value:** *your OpenAI API key* (get it from [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys))
+   - 
+### 📂 Dataset Details
+The notebook expects input in .jsonl format with OpenAI’s fine-tuning schema, you can find the jsonl dataset file at the drive link given below
+```
+{
+  "messages": [
+    {"role": "system", "content": "You generate detailed narratives from text."},
+    {"role": "user", "content": "<input_text_here>"},
+    {"role": "assistant", "content": "<target_output_text>"}
+  ]
+}
+```
 
+# Option 4: Training DeepSeek-R1 using Unsloth  
+## Notebook: `Option4_Training_DeepSeek_using_Unsloth_FixedSplitData.ipynb`
 
+This notebook showcases how to fine-tune the **DeepSeek-R1-Distill-LLaMA-8B** model using the [Unsloth](https://github.com/unslothai/unsloth) library, which enables highly efficient fine-tuning of large language models on consumer hardware such as Google Colab.
 
+---
 
+### ⚙️ Key Features
+
+- Utilizes `unsloth/DeepSeek-R1-Distill-Llama-8B`, a compact and instruction-tuned model.
+- Implements **PEFT with LoRA adapters** to reduce training memory requirements.
+- Employs `FastLanguageModel` API for model loading, formatting, and training.
+- Loads fixed split data from CSV files (train/validation).
+- Supports logging and checkpoint saving to Google Drive.
+
+---
+
+### 📂 Dataset Structure
+
+Expected directory:
+directory/
+- train_dataset.csv
+- validation_dataset.csv
+
+  
+Each CSV must contain:
+- `INPUT TEXT`: structured scene input (e.g., object labels and coordinates)
+- `OUTPUT TEXT`: human-written instructional narrative
+
+---
+
+### 🔐 API Key Setup (for Google Colab)
+
+The notebook retrieves your Hugging Face access token securely using Colab secrets:
+
+#### Steps:
+1. Click the 🔐 "key" icon on the left sidebar in Colab.
+2. Add a new secret:
+   - **Key**: `DeepSeek`  
+   - **Value**: your Hugging Face token  
+     → You can get one from [https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
+
+The key is accessed in the notebook using:
+```python
+hf_token = userdata.get("DeepSeek")
+```
 
 - Dataset used for Detection - https://drive.google.com/drive/folders/1hzg9zE7_syzb83Le37Kzc8k87WpzKE7v?usp=sharing
 - Dataset used for Narrative Generation - https://drive.google.com/drive/folders/1ubRAzrbPvVPL2TcnK1H6fM6NXE9HL-Nz?usp=sharing
