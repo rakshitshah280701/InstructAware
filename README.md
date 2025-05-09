@@ -15,10 +15,7 @@ This notebook presents the complete training and evaluation pipeline for fine-tu
 ### 📂 Dataset Details
 You can find the csv files from the drive link given below for CSV dataset
 The notebook expects CSV-formatted datasets located in the following structure:
-datasets/
-├── train_dataset_cleaned.csv
-├── validation_dataset_cleaned.csv
-└── test_dataset_cleaned.csv
+<pre> ``` datasets/ ├── train_dataset_cleaned.csv ├── validation_dataset_cleaned.csv └── test_dataset_cleaned.csv ``` </pre>
 
 Each file should contain the following columns:
 - `INPUT TEXT`: Preprocessed textual input (e.g., detected object labels, bounding box positions).
