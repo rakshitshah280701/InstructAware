@@ -1,7 +1,10 @@
 # InstructAware
-[Demo of InstructAware App -](https://youtu.be/N5SmVK5J02c?si=dMQxnNRq3QCTlcYQ) (see seperte [github](https://github.com/rakshitshah280701/SmartSignNavigation-Android.git] )
+### InstructAware is a System to assist low-vision people with Intelligent Sign Awareness. 
+[Demo of InstructAware App -](https://youtu.be/N5SmVK5J02c?si=dMQxnNRq3QCTlcYQ) (see sepeerate [github](https://github.com/rakshitshah280701/SmartSignNavigation-Android.git] ) )
 
-This has all training Colabs, dataset links and other related resources related to the creation of Models Tests & Used in the InstructAware project
+This has all training Colabs, dataset links and other related resources related to the creation of Models Tests & Used in the InstructAware project.
+
+### There were Models created and Compared:   Transformer-Based from Scratch, T5, GPT-3.5, DeepSeek R1 Distill Llama 8B
 
 # Transformer-Based Instructional Narrative Generation (From Scratch)  
 ## Notebook: `Option1_Transformer_trained_From_Scratch_With_Metrics.ipynb`
