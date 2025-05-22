@@ -6,6 +6,54 @@ This has all training Colabs, dataset links and other related resources related 
 
 ### There were Models created and Compared:   Transformer-Based from Scratch, T5, GPT-3.5, DeepSeek R1 Distill Llama 8B
 
+# Dataset for ALL models:
+The following is an example of the data in our dataset.  It consists of
+
+
+### Image
+
+### Sign Info
+{
+  "task": "Generate a natural language description based on detected text and bounding boxes.",
+  "detected_signs": [
+    {
+      "text": "CITY JEWELRY 10.14.18. K ORO HOUR NAME PLATES BIG SALE",
+      "coordinates": [0.8871527777777778, 0.7033333333333334, 0.10590277777777778, 0.0961111111111111]
+    },
+    {
+      "text": "14k ORO BIG SALE",
+      "coordinates": [0.5253472222222222, 0.7027777777777777, 0.04201388888888889, 0.07277777777777777]
+    },
+    {
+      "text": "HOUR NAME PLATE BIG SALE",
+      "coordinates": [0.5163194444444444, 0.8155555555555556, 0.06875, 0.051111111111111114]
+    },
+    {
+      "text": "JEWELRY CITY",
+      "coordinates": [0.48194444444444445, 0.49777777777777776, 0.26944444444444443, 0.09277777777777778]
+    },
+    {
+      "text": "NAME PLATES 10/14K GOLD WE BUY GOLD",
+      "coordinates": [0.596875, 0.7027777777777777, 0.06701388888888889, 0.07388888888888889]
+    },
+    {
+      "text": "CITY JEWELRY",
+      "coordinates": [0.3645833333333333, 0.7094444444444444, 0.0375, 0.034444444444444444]
+    },
+    {
+      "text": "1 HOUR REPAIR WE BUY GOLD",
+      "coordinates": [0.45208333333333334, 0.8044444444444444, 0.035069444444444445, 0.04777777777777778]
+    }
+  ],
+  "description": ""
+}
+
+### Narrative
+You’re in front of "CITY JEWELRY," where there are big sales on gold and name plates. They also offer quick repairs for gold items. You can find signs that say they buy gold too.
+
+
+---
+
 # Transformer-Based Instructional Narrative Generation (From Scratch)  
 ## Notebook: `Option1_Transformer_trained_From_Scratch_With_Metrics.ipynb`
 
