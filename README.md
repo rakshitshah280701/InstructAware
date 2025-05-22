@@ -1,6 +1,7 @@
 # InstructAware
 [Demo of InstructAware App -](https://youtu.be/N5SmVK5J02c?si=dMQxnNRq3QCTlcYQ) (see seperte [github](https://github.com/rakshitshah280701/SmartSignNavigation-Android.git] )
-This has all training Colabs, dataset links and other related resources related to InstructAware project
+
+This has all training Colabs, dataset links and other related resources related to the creation of Models Tests & Used in the InstructAware project
 
 # Transformer-Based Instructional Narrative Generation (From Scratch)  
 ## Notebook: `Option1_Transformer_trained_From_Scratch_With_Metrics.ipynb`
