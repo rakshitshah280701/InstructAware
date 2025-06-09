@@ -1,7 +1,7 @@
 # InstructAware
 ### InstructAware is a System to assist low-vision people with Intelligent Sign Awareness. 
 
-[Demo of InstructAware App -](https://youtu.be/N5SmVK5J02c?si=dMQxnNRq3QCTlcYQ) (see seperate [github](https://github.com/rakshitshah280701/SmartSignNavigation-Android.git] ) )
+[Demo of InstructAware App -](https://youtu.be/N5SmVK5J02c?si=dMQxnNRq3QCTlcYQ) (see seperate [github](https://github.com/rakshitshah280701/SmartSignNavigation-Android.git) )
 
 ### This has all training Colabs, dataset links and other related resources related to the creation of Models Tests & Used in the InstructAware project.
 ### Objective: take as input the output of a sign detection vision system into a Generative Model to create Instructional Narrtives.
